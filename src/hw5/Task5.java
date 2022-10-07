@@ -8,7 +8,9 @@ public class Task5 {
         System.out.println(Arrays.toString(arr));
         int size = arr.length;
         int count= 0;
-        for ( ; (arr[count]<0) && count<size; ++count);
+        while (count<size && arr[count]<0){
+            ++count;
+        }
         int [] copyArr = new int [count];
         System.arraycopy(arr, 0, copyArr, 0, count);
         System.out.println(Arrays.toString(copyArr));
