@@ -9,7 +9,7 @@ abstract public class Unit {
         }
         this.healthScore = healthScore;
     }
-    private int maxHealScore = healthScore;
+    private final int maxHealScore = healthScore;
     public boolean isALive(){
         //if (0<healthScore) return true;
         //if (healthScore<=0)return false;
@@ -30,6 +30,9 @@ abstract public class Unit {
     public int getHealthScore (){
         return healthScore;
     }
+
+
+
     public void rest (){
         plusHealth(1);// при вызове метода здоровье всех юнитов увеличится
         System.out.println("Unit востанавливает силы");

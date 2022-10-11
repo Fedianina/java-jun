@@ -11,11 +11,11 @@ public class Hunter {
         Cat cat2 = new Cat("Fred", 12, 5);
         Mous mous3 = new Mous(11);
         cat1.huntOfMouse(mous3);
-        cat2.fight(cat1);
         Mous [] arrMouse = new Mous[7];
         for (int i =0;i< arrMouse.length; ++i){
             arrMouse[i]=new Mous();
             cat1.huntOfMouse(arrMouse[i]);
         }
+        cat2.fight(cat1);
     }
 }

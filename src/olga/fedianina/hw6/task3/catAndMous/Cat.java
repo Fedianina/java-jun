@@ -7,7 +7,7 @@ public class Cat {
     public String catName;
     private double speed;
     private double weight;
-    private Mous backpackForMouse[] = new Mous[99]; //Создали тип Mous тк будет содержэать именно мышей, а не числа
+    private Mous backpackForMouse[] = new Mous[99]; //Создали тип Mous тк будет содержать именно мышей, а не числа
 
     public Cat(String catName, double speed, double weight) {
         this.catName = catName;

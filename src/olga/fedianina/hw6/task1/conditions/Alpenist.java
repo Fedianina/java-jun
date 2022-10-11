@@ -15,14 +15,14 @@ public class Alpenist {
     }
 
     public void setName(String name) {
-        if (name.length() < 3) {
+        if (name == null || name.length() < 3) {
             throw new IllegalArgumentException("Имя должно содержать не менее 3х символов");
         }
         this.name = name;
     }
 
     public void setAdress(String adress) {
-        if (adress.length() < 5) {
+        if (name == null || adress.length() < 5) {
             throw new IllegalArgumentException("Адрес должен содержать менее 5х символов");
         }
         this.adress = adress;

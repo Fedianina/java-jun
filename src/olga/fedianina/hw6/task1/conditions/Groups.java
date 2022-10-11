@@ -31,17 +31,6 @@ public class Groups {
         this.recruitment = recruitment;
     }
 
-    /*public void setAlpenists(int number, Alpenist[] alpenists) {
-        if (recruitment) {
-            if (alpenists[number - 1] != null) {
-                throw new IllegalArgumentException("Альпенист с таким номером уже существует");
-            }
-            this.alpenists = alpenists;
-        } else {
-            System.out.println("Набор окончен");
-        }*/
-
-
     public void setMountain(Mountain mountain) {
         this.mountain = mountain;
     }
