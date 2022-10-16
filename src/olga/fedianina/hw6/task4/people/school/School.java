@@ -1,6 +1,5 @@
 package olga.fedianina.hw6.task4.people.school;
 
-import olga.fedianina.hw6.task2.condition.Foodstuff;
 import olga.fedianina.hw6.task4.people.Student;
 import olga.fedianina.hw6.task4.people.Teacher;
 import olga.fedianina.hw6.task4.people.Director;
@@ -16,12 +15,15 @@ public class School {
 директор объявляет начало занятий
 учителя учат учеников (предмет учителя и ученика должны совпадать, уровень знаний ученика в процессе обучения должен увеличиваться)
 директор объявляет окончание занятий*/
+
+    private final String name;
     private Director director;
     public   Teacher[]  arrTeacher;
     public Student [] arrStudent;
     private boolean openClose;
 
-    public School(Director director, Teacher[] arrTeacher, Student[] arrStudent) {
+    public School(String name, Director director, Teacher[] arrTeacher, Student[] arrStudent) {
+        this.name = name;
         this.director = director;
         this.arrTeacher = arrTeacher;
         this.arrStudent = arrStudent;

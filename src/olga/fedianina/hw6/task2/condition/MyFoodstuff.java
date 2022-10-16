@@ -43,11 +43,11 @@ public class MyFoodstuff {
            medium.setCarbone(medium.getCarbone() + foodstuff.getCarbone());
            medium.setFat(medium.getFat() + foodstuff.getFat());
            System.out.println("Продукт успешно добавлен в список");
-       } else {
+       }
            System.out.println("Список продуктов полон");
            return;
        }
-   }
+
 
     @Override
     public String toString() {

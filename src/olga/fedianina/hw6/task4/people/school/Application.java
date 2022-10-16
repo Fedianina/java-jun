@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Application {
     public static void main(String[] args) {
         Director director = new Director("ыаа", 69);
-        School school = new School(director,Teacher.createArrTeacher(6),Student.createArrStudent(3));
+        School school = new School("ыаыа", director,Teacher.createArrTeacher(6),Student.createArrStudent(3));
         school.schoolDay();
     }
 }

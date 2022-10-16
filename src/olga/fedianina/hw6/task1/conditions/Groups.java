@@ -43,7 +43,7 @@ public class Groups {
     }
 
     public void plusAlpenist(Alpenist alpenist) {
-        if (recruitment == true) {
+        if (recruitment) {
             if (number < alpenists.length) {
                 alpenists[number] = alpenist;
                 ++number;
