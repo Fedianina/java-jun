@@ -1,4 +1,4 @@
-package olga.fedianina.hw15.Task2;
+package olga.fedianina.hw14.Task2;
 
 enum MessagePriority {
     LOW, MEDIUM, HIGH, URGENT;

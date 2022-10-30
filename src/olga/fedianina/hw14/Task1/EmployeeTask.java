@@ -1,8 +1,7 @@
-package olga.fedianina.hw15.Task1;
+package olga.fedianina.hw14.Task1;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import olga.fedianina.hw15.Task1.SortName;
 
 public class EmployeeTask {
     public static void main(String[] args) {

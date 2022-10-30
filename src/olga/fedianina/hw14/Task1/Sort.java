@@ -1,6 +1,4 @@
-package olga.fedianina.hw15.Task1;
-
-import olga.fedianina.lesson14.Student;
+package olga.fedianina.hw14.Task1;
 
 import java.util.Comparator;
 
