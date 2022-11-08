@@ -39,9 +39,9 @@ public class MessageTask {
     }
 
     public static List<Message> uniqueMessagesInOriginalOrder(List<Message> messageList) {
-        HashSet<Message> mes = new HashSet<Message>(messageList);
+        HashSet<Message> mes = new LinkedHashSet<>(messageList);
         System.out.println(mes);
-        return null;
+        return new ArrayList<>(new LinkedHashSet<>(mes));
     }
 
     public static void removeEach(List<Message> messageList, MessagePriority priority) {

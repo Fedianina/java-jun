@@ -4,9 +4,10 @@ import olga.fedianina.lessons7.base.BattleUnit;
 import olga.fedianina.lessons7.base.Unit;
 import olga.fedianina.lessons7.base.AppSettings;
 
+import java.io.Serializable;
 import java.util.Arrays;
 
-public class King extends Unit {
+public class King extends Unit implements Serializable {
     //привязываем родительский класс
     private int gold = AppSettings.GOLD;//обращаемся к классу со стат св-вом (значение св-ва = значению статической переменной)
 
@@ -78,6 +79,8 @@ public class King extends Unit {
         else if (a<b)System.out.println("Выиграл обороняющийся");
         else System.out.println("Ничья");
     }
+
+
 
 
     //армия одного нападает на другого

@@ -15,6 +15,7 @@ public class Abonements {
     private final String surnameOwners;
     private final int yearOfBirth;
     private final AbonementsType abonementsType;
+    private String desiredPlaceOfVisit = "";
 
     // проверки
 
@@ -50,6 +51,26 @@ public class Abonements {
 
     public AbonementsType getAbonementsType() {
         return abonementsType;
+    }
+
+    public String getDesiredPlaceOfVisit() {
+        return desiredPlaceOfVisit;
+    }
+
+    @Override
+    public String toString() {
+        return "Abonements{" +
+                "registrationDate=" + registrationDate +
+                ", endRegistrationDate=" + endRegistrationDate +
+                ", nameOwners='" + nameOwners + '\'' +
+                ", surnameOwners='" + surnameOwners + '\'' +
+                ", yearOfBirth=" + yearOfBirth +
+                ", abonementsType=" + abonementsType +
+                '}';
+    }
+
+    public void setDesiredPlaceOfVisit(String desiredPlaceOfVisit) {
+        this.desiredPlaceOfVisit = desiredPlaceOfVisit;
     }
 
     public static Abonements getAbonement(){

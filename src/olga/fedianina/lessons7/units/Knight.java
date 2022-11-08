@@ -1,7 +1,10 @@
 package olga.fedianina.lessons7.units;
 
 import olga.fedianina.lessons7.base.BattleUnit;
-public class Knight extends BattleUnit {
+
+import java.io.Serializable;
+
+public class Knight extends BattleUnit implements Serializable {
 
     private int additionalHealth;
 

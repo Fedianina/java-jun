@@ -1,5 +1,7 @@
 package olga.fedianina.lessons7;
 
+import olga.fedianina.lesson20.BinHandler;
+import olga.fedianina.lesson20.Point;
 import olga.fedianina.lessons7.base.BattleUnit;
 import olga.fedianina.lessons7.units.Infantry;
 import olga.fedianina.lessons7.units.King;
@@ -22,7 +24,15 @@ public class Application {
         king1.generationArmy();
         king2.generationArmy();
         king1.startBattle(king2);
+
+        BinHandler<King> kingHandler = new BinHandler<>();
+        kingHandler.writeToFile(king1);
+        King saveKing = kingHandler.readFromFile();
+
         }
+
+
+
 
     }
 

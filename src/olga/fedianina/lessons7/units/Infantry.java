@@ -1,7 +1,9 @@
 package olga.fedianina.lessons7.units;
 import  olga.fedianina.lessons7.base.BattleUnit;
 
-public class Infantry extends BattleUnit {
+import java.io.Serializable;
+
+public class Infantry extends BattleUnit implements Serializable {
     private int additionalAttack;
 
 

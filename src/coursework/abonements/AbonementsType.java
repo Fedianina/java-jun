@@ -21,4 +21,20 @@ public enum AbonementsType {
         this.timeOf = timeOf;
 
     }
+
+    public LocalTime getTimeOf() {
+        return timeOf;
+    }
+
+    public boolean isSwimmingPool() {
+        return swimmingPool;
+    }
+
+    public boolean isFitnessRoom() {
+        return fitnessRoom;
+    }
+
+    public boolean isGroupClasses() {
+        return groupClasses;
+    }
 }
