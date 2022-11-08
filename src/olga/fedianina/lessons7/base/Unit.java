@@ -1,6 +1,8 @@
 package olga.fedianina.lessons7.base;
 
-abstract public class Unit {
+import java.io.Serializable;
+
+abstract public class Unit implements Serializable {
     protected  int healthScore;
 // создаем конструктор руками
     public Unit (int healthScore){
