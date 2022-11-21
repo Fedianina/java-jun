@@ -21,23 +21,6 @@ public class RecordThreads extends Thread {
     }
 
 
-
-   /* private static boolean writeToFile(String strings, File file) {
-        boolean result = false;
-        try (FileOutputStream output = new FileOutputStream(file, true)) {
-            output.write(strings.getBytes(StandardCharsets.UTF_8));
-            result = true;
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return result;
-    }
-    */
-
-
-
     private String miniString (CopyOnWriteArrayList <String> list){
         return list.stream().min((e1, e2) -> e1.length() - e2.length()).toString();
     }
@@ -46,7 +29,7 @@ public class RecordThreads extends Thread {
     public void run(CopyOnWriteArrayList <String> list){
         while (!Thread.currentThread().isInterrupted()) {
             try {
-                Thread.sleep(300);
+                Thread.sleep(30_000);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
